@@ -1,848 +1,959 @@
+
+   /* loads the font file */
+   
+@font-face {
+    font-family: "Aeonik";
+    src: url("Aeonik-Regular.otf") format("opentype");
+  }
+
+  @font-face {
+    font-family: "AeonikItalic";
+    src: url("Aeonik-RegularItalic.otf") format("opentype");
+  }
+
+  @font-face {
+    font-family: "AeonikLight";
+    src: url("Aeonik-Light.otf") format("opentype");
+  }
+
+  
+  
 body {
-    margin: 0;
-    font-family: "Lato", sans-serif;
-}
-.research {
-    margin: 0;
-    /* display: inline-block; */
-    /* width: 100vw; */
-    padding: 0 10px;
-}
-
-.research img {
-    padding: 2px;
-}
-
-.research h2 {
-    color: rgb(197, 197, 197);
-    font-size: 20px;
-    font-weight: lighter;
-    /* padding: 0 10px; */
-    /* color: pink; */
-}
-
-
-/* my name as a home button */
-/* only for page with vimeo or youtube embedd on desktop */
-body > div.onMobile > div  > a
-{
-    z-index: 11;
-    margin: 0;
-    padding: 10px 25px;
-    text-decoration: none;
-    color: rgb(38, 38, 38);
-    font-size: 20px;
-    font-weight: normal;
-    position:fixed ;
-}
-
-
-body > div.onMobile > div > h1 > a
-{
-    z-index: 11;
-    margin: 0;
-    padding: 10px 25px;
-    text-decoration: none;
-    color: rgb(38, 38, 38);
-    font-size: 20px;
-    font-weight: normal;
-    position:fixed ;
-}
-
-body > div.onMobile > div > h1 > a:hover
-{
-   text-decoration: underline;
-}
-
-.sidebar {
-    margin: 0;
-    padding: 10px 25px;
-    width: 20%;
+    /* background-color: #1a1a1a; */
+    font-family: 'Aeonik';
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
     background-color: #ffffff;
-    position: fixed;
-    height: 100%;
-    overflow: auto;
-    font-weight: lighter;
-    /* z-index: 1; */
+    color: #1d1d1f;
+}
+::selection {
+    background: rgb(153, 211, 124);;
+    color: #fafafa;
+  }
+
+ body.dark ::selection {
+    background: rgb(153, 211, 124);;
+    color: #1d1d1f;
+  }
+
+
+
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
-.sidebar h1 {
-    text-decoration: none;
-    color: rgb(38, 38, 38);
-    font-size: 20px;
-    font-weight: normal;
-    /* z-index: 2; */
-}
-
-
-.sidebar a {
-    display: block;
-    color: black;
-    /* padding: 25px; */
-    text-decoration: none;
-    z-index: 2;
-}
-
-.sidebar p {
-    display: block;
-    color: black;
-    width: 85%;
-    /* padding: 10px 25px; */
-    text-decoration: none;
-    line-height: 22px;
-}
-
-.sidebar .links a {
-    /* padding: 5px 25px */
-    color: black;
-}
-
-.sidebar a.active {
-    text-decoration: underline;
-}
-
-.sidebar a:hover:not(.active) {
-    text-decoration: underline;
-}
-
-
-
-div.content {
-    margin-left: 20%;
-    padding: 1px 25px;
-    /* height: 1000px; */
-}
-
-
-/* full screen styling for Information page */
-.Info {
-    /* float: left; */
-    margin-left: 20%;
-    /* padding: 1px 25px; */
-    padding: 0 25px;
-    /* height: 1000px; */
-    line-height: 10px;
-}
-
-div.Info h6 {
-    color: rgb(0, 0, 0);
-    font-size: 17px;
-    font-weight: normal;
-}
-
-div.Info h4 {
-    /* font-size: 15px; */
-    color: 0;
-    font-size: 17px;
-    font-weight: lighter;
-    text-decoration: underline;
-}
-
-div.Info p {
-    /* color: rgb(197, 197, 197); */
-    font-weight: lighter;
-    font-size: 17px;
-    /* text-decoration: underline; */
-}
-
-div.Info h5 {
-    color: rgb(197, 197, 197);
-    font-weight: lighter;
-    font-size: 17px;
-    /* text-decoration: underline; */
-}
-
-.Gif video {
-    width: 80%;
-    position: relative;
-}
-
-/* VIDEO */
-
-.videoWrapper {
-    position: relative;
-    padding-bottom: 56.25%;
-    /*16:9 */
-    margin-bottom: -8%;
-    padding-top: 25px;
-    /* height: 20px; */
-    /* z-index: 1; */
-    padding-left: 0;
-
-}
-
-.videoWrapper iframe {
-    position: absolute;
-    /* top: 30px; */
-    left: 20%;
-    padding-right: 20px;
-    padding-left: 0px;
-    width: 80%;
-    height: 80%;
-    /* z-index: -1; */
-
-}
-
-/* PROJECT BIO & CONTEXT */
-.research {
-    margin-left: 20%;
-    display: table;
-}
-
-.research h2 {
-
-    color: rgb(197, 197, 197);
-    font-size: 20px;
-    font-weight: lighter;
-}
-
-.nextProject p {
-    color: rgb(197, 197, 197);
-    font-size: 20px;
-    font-weight: lighter;
-}
-
-.nextProject a {
-    color: rgb(197, 197, 197);
-    font-size: 20px;
-    font-weight: lighter;
-    text-decoration: underline;
-}
-
-.projRow h2 {
-    color: rgb(197, 197, 197);
-    font-size: 20px;
-    font-weight: lighter;
-}
-
-.projRow h3 {
-    color: rgb(0, 0, 0);
-    font-size: 20px;
-    font-weight: normal;
-}
-
-.projRow p {
-    color: black;
-    font-size: 20px;
-    font-weight: lighter;
-}
-
-.projRow a {
-    color: black;
-    font-size: 20px;
-    font-weight: lighter;
-    text-decoration: none;
-}
-
-.projRow a:hover {
-    text-decoration: underline;
-}
-
-.projRow {
-    margin: 0px;
-    margin-left: 20%;
-}
-
-
-
-/* Create two equal columns that floats next to each other */
-.projColumn {
-    float: left;
-    width: 50%;
-    padding: 10px;
-}
-
-.projColumn .first {
-
-    width: 100%;
-    /* background-color: red; */
-    /* margin-left: 20%; */
-}
-
-.projColumn .second {
-
-    width: 100%;
-    /* background-color: green; */
-}
-
-
-/* Clear floats after the columns */
-.projRow:after {
-    content: "";
-    display: table;
-    clear: right;
-}
-
-
-
-
-
-/* 700 LAYOUT */
-@media screen and (max-width: 700px) {
-    .mobileSidebar {
-        display: none;
-    }
-
-    .sidebar {
-        display: block;
-        margin: 0;
-        padding: 10px 25px;
-        width: 20%;
-        background-color: #ffffff;
-        position: fixed;
-        height: 100%;
-        overflow: auto;
-        font-weight: lighter;
-        z-index: 1;
-
-    }
-
-    .sidebar h1 {
-        text-decoration: none;
-        color: rgb(38, 38, 38);
-        font-size: 20px;
-        font-weight: normal;
-    }
-
-    .sidebar a {
-        display: block;
-        color: black;
-        /* padding: 25px; */
-        text-decoration: none;
-    }
-
-    .sidebar p {
-        display: block;
-        color: black;
-        width: 85%;
-        /* padding: 10px 25px; */
-        text-decoration: none;
-        line-height: 22px;
-    }
-
-    .sidebar .links a {
-        /* padding: 5px 25px */
-        color: black;
-    }
-
-    .Gif video {
-        width: 100%;
-        margin-top: 0px;
-
-    }
-
-    div.content h3 {
-        margin-left: 10px;
-    }
-
-    div.content {
-        margin-left: 0;
-        padding: 1px 0px;
-    }
-
-
-
-
-    .videoWrapper iframe {
-        position: absolute;
-        top: 0;
-        left: 0%;
-        width: 100%;
-        height: 100%;
-        margin: 0;
-        padding: 0 10px;
-    }
-
-    .projColumn {
-        width: 100%;
-        /* margin-left: 5px;
-        margin-right: 5px; */
-
-    }
-
-    .projRow {
-        margin: 0%;
-        padding: 0 5px;
-
-    }
-
-    .projColumn p {
-        font-size: 15px;
-
-    }
-
-    .projColumn h2 {
-        font-size: 15px;
-    }
-
-    .projRow h3 {
-        color: rgb(0, 0, 0);
-        font-size: 16px;
-        font-weight: normal;
-    }
-
-    .research {
-        margin: 0;
-        /* display: inline-block; */
-        width: 100vw;
-        padding: 0 10px;
-    }
-
-    .research img {
-        padding: 2px;
-    }
-
-    .research h2 {
-        color: rgb(197, 197, 197);
-        font-size: 20px;
-        font-weight: lighter;
-        /* padding: 0 10px; */
-        /* color: pink; */
-    }
-
-
-
-
-}
-
-@media screen and (max-width: 400px) {
-    .sidebar a {
-        text-align: left;
-        float: none;
-    }
-
-    div.eduTitle {
-        float: left;
-    }
-}
-
-
-/* idk what this is for */
-* {
-    box-sizing: border-box;
-}
-
-
-.row {
-    display: -ms-flexbox;
-    /* IE10 */
+body.dark {
+    background-color: #141414;
+    color: #fafafa;
+  }
+
+
+  body.dark > div.container-fluid > div.navbar{
+    font-family: "AeonikLight";
+    font-size: 2vw;
     display: flex;
-    -ms-flex-wrap: wrap;
-    /* IE10 */
-    flex-wrap: wrap;
-    padding: 0 4px;
+    justify-content: flex-end;
+    padding-bottom: 0%;
+    flex-direction: row;
+  }
+
+  body > div.container-fluid > div.navbar{
+    font-family: "AeonikLight";
+    font-size: 2vw;
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 0%;
+    flex-direction: row;
+  }
+
+
+
+.navbar a:link{
+    text-decoration: none;
+    
+    /* color: #f5f5f7; */
+
 }
 
-/* Create four equal columns that sits next to each other */
-.column {
-    -ms-flex: 50%;
-    /* IE10 */
-    flex: 50%;
-    /* max-width: 50%; */
-    padding: 0 10px;
+.navbar a:visited{
+    text-decoration: none;
+    color: #535355;
+}
 
+body.dark > div.navbar > a{
+    color: #9f9f9f;
+}
+
+body.dark > div.navbar > div > a:nth-child(1){
+    color: #9f9f9f;
+}
+body.dark > div.navbar > div > a:nth-child(3){
+    color: #9f9f9f; 
+}
+
+
+
+
+.navbar a:hover{
+    text-decoration: underline;
+}
+
+.navbar .navbarLeft{
+    display:inline-flex;
+    color: #535355;
+}
+
+
+
+/* light dark position */
+.nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding-bottom: -10;
+}
+
+
+@media only screen and (max-device-width: 480px) {
+    .navbar {
+        font-family: "AeonikLight";
+        font-size:5vw;
+}
+
+body > div.navbar > div > nav > ul > li:nth-child(1) > button{
+    font-size:5vw;
+}
+
+body > div.navbar > div > nav > ul > li:nth-child(2) > button{
+    font-size:5vw;
+}
+
+
+ p{
+    margin-top: 0;
+    font-size:8vw;
+}
+
+}
+
+.intro p{
+    margin-top: 0;
+}
+
+button {
+  border: none;
+  font-family: 'AeonikLight';
+  background-color: Transparent;
+  /* padding: 0.5rem;
+  background: #333;
+  border-radius: 5px; */
+  font-size:2vw;
+  /* transition: background 200ms ease; */
+  /* color: #eaeaea; */
+  color: #535355;
+}
+
+button:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+body > div.navbar > div > nav > ul > li:nth-child(2) > button{
+    color: #9f9f9f;
+}
+.dark-button i {
+  /* transform: rotate(35deg); */
+  /* margin-left: 0.3rem; */
+  
+  background-color: Transparent;
+}
+
+main {
+    font-family: 'Aeonik';
+  font-size: 5vw;
+  display: flex;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  }
+
+  .projectIndex{
+    font-family: 'Aeonik';
+    font-size: 5vw;
+    display: flex;
+  }
+
+  .contact{
+    font-family: 'Aeonik';
+    font-size: 5vw;
+   
+  }
+  .dejana:after{
+    content:'Dejana';
+    text-decoration: underline;
+}
+.dejana:hover:after{
+    cursor: pointer;
+    text-decoration: none;
+    /* color: #f5f5f7; */
+    content:'Dejana (pronounced dey–ana)';
+}
+
+.homeHover{
+    color: rgb(153, 211, 124);
+}
+.homeHover:hover{
+    text-decoration: underline;
+    /* font-family: 'AeonikItalic'; */
+    
+    
+    cursor: pointer;
+    }
+
+
+    .sayHi{
+      color: rgb(153, 211, 124);
+  }
+    .sayHi:hover{
+      text-decoration: underline;
+      /* font-family: 'AeonikItalic'; */
+      cursor: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" height="64" width="64"><text y="28" font-size="32">💌</text></svg>'), auto;
+      }
+
+      .Connect{
+        color: rgb(153, 211, 124);
+    }
+      .Connect:hover{
+        text-decoration: underline;
+        /* font-family: 'AeonikItalic'; */
+        cursor: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 24 24'%3E%3Cpath d='M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z'/%3E%3C/svg%3E%0A"),auto;
+        }
+
+
+
+    /* image grid */
+
+    * {
+  box-sizing: border-box;
+}
+
+
+/* PHOTO GRID */
+.row {
+  display: -ms-flexbox; /* IE 10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE 10 */
+  flex-wrap: wrap;
+  
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  -ms-flex: 50%; /* IE 10 */
+  flex: 50%;
+  padding: 0 8px;
 }
 
 .column video {
-    margin-top: 8px;
-    margin-bottom: 15px;
-    vertical-align: middle;
-    float: left;
-    /* determines size of thumbnails */
-    width: 100%;
-    height: 40vh;
-    object-fit: cover;
-    object-position: center;
+  
+  margin-top: 16px;
+  vertical-align: middle;
+  border-radius: 4px;
 }
 
-.column video:hover {
+/* IMAGE BACKGROUND */
+body.dark > div.container-fluid > div.row > div > button > img{
+  background-color:#1d1d1f;
+  /* border-radius: 1em; */
+}
+
+body > div.container-fluid > div.row > div > button > img{
+  background-color:#fafafa;
+  /* border-radius: 1em; */
+}
+
+
+
+.galleryCardVideo {
     cursor: pointer;
-}
-
-.column img {
-    margin-top: 8px;
-    margin-bottom: 15px;
-    vertical-align: middle;
-    float: left;
-    /* determines size of thumbnails */
+    overflow: hidden;
+    border-radius: 4px;
+    background-color: #000;
     width: 100%;
-    height: 40vh;
-    object-fit: cover;
-    object-position: center;
+    height: 100%;
+    -webkit-transition: all .5s cubic-bezier(.175,1.2,.32,1.275);
+    -o-transition: all .5s cubic-bezier(.175,1.2,.32,1.275);
+    transition: all .5s cubic-bezier(.175,1.2,.32,1.275);
 }
 
-.captionTitle a {
+/* TITLE */
+.figTitle{
+    /* color: #9f9f9f; */ 
+    color: #1d1d1f;
+    font-family: "Aeonik";
+    font-size:1.5vw;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+
+
+/* DATE */
+.figTitle span{
+    /* color: #9f9f9f; */
+    color: #1d1d1f;
+}
+
+/* DARK MODE TITLE */
+body.dark .figTitle{
+    color: #fafafa;
+}
+
+body.dark .figTitle span{
+  /* color: #9f9f9f; */
+  color: #fafafa;
+}
+
+/* INFO */
+.figInfo{
+    font-family: "AeonikLight";
+    font-size: 1vw;
+    color: black;
+    margin-bottom: 30px;
+}
+
+/* DARK MODE INFO */
+body.dark .figInfo{
+    color: #9f9f9f;
+    font-size:1vw;
+}
+
+
+
+/* pop up */
+
+  
+  .button {
+    /* font-size: 1em; */
+    /* padding: 10px; */
+    /* color: #fff; */
+    /* border: 2px solid blue; */
+    border-radius: 20px/50px;
     text-decoration: none;
-    color: rgb(38, 38, 38);
-    font-size: 20px;
-    font-weight: normal;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+  }
+  
+ 
+  
+  /* shadow overlay */
+  .overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(14, 14, 14, 0.7);
+
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    overflow-y: scroll !important;
+  }
+  
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  /* popup card */
+  .popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    width: 80%;
+    position: relative;
+    transition: all 1s ease-in-out;
+   
+  }
+
+
+  body.dark #popup1 > div{
+    margin: 70px auto;
+    padding: 20px;
+    background: rgb(40, 40, 40);
+    border-radius: 5px;
+    width: 80%;
+    position: relative;
+    transition: all 1s ease-in-out;
+  }
+  
+  .popup h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: "AeonikLight";
+    font-size:3vw;
+  }
+  
+  .popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    /* transition: all 200ms; */
+    font-size: 3vw;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  #popup1 .close:hover {
+    color: pink;
+    z-index: 2;
+  }
+  
+  .popup .content {
+    /* max-height: 50%; */
+    overflow: auto;
+   color:  rgb(135, 135, 135);
+    font-size:2vw;
+    z-index: 1;
+  }
+
+  body > div.row > div:nth-child(2) > video:nth-child(2){
+      z-index: -1;
+  }
+
+
+
+  /* MODAL */
+
+  @media (min-width: 768px) {
+    .modal-xl {
+      width: 90%;
+     max-width:1200px;
+     
+    }
+  }
+
+  div.container-fluid > div.row > button:hover{
+cursor: pointer;
+  }
+
+  #SHAKE > div > div{
+      background-color:rgb(249, 249, 249);
+      color: #1d1d1f;
+      
+  }
+
+  #SHAKE > div > div > div.modal-body{
+      padding: 0;
+  }
+  #SHAKE > div > div > div.modal-body > div.projectContent > p:nth-child(4) > a{
+      font-size: 1.2vw;
+      /* color: pink; */
+  }
+
+
+  /* DARK MODE MODAL */
+  body.dark #SHAKE > div > div{
+    background-color: #1d1d1f;
+    color: #fafafa;
 }
 
-.captionTitle a:hover {
-    text-decoration: underline;
+body.dark #SHAKE > div > div > div.modal-footer > button{
+    background-color: transparent;
+    border-color: transparent;
+    color: #F5F5F7;
+    font-size: 1vw;
+    text-shadow: rgb(255 255 255) 0px 1px 0px;
+    opacity: 0.5;
 }
 
-.captionDetail {
-    color: rgb(194, 194, 194);
-    font-size: 20px;
-    margin-top: 10px;
-    margin-bottom: 40px;
-    font-weight: lighter;
-}
-
-@media screen and (min-width: 700px) {
-
-.onlyOnMobile{
-    display: none;
-}
-}
-/* 800 LAYOUT FOR TWO COLUMNS */
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-
-
-    
-
-    .mobileSidebar {
-        display: none;
-    }
-
-    .sidebar {
-        width: 100%;
-        height: auto;
-        position: relative;
-    }
-
-    .sidebar a {
-        float: left;
-    }
-
-    div.content h3 {
-        margin-left: 10px;
-    }
-
-    div.content {
-        margin-left: 0;
-        padding: 1px 0px;
-    }
-
-    .sidebar h1 {
-        text-decoration: none;
-        color: rgb(38, 38, 38);
-        font-size: 20px;
-        font-weight: normal;
-    }
-
-
-
-
-    .column {
-        -ms-flex: 50%;
-        flex: 50%;
-        max-width: 50%;
-    }
+body.dark #SHAKE > div > div > div.modal-footer > button:hover{
+    opacity: 0.5;
 
 }
 
-.Gif {
-    margin-left: 20%;
-    margin-top: 10px;
+
+body.dark #SHAKE > div > div > div.modal-content > button{
+    color: #F5F5F7;
+    font-size: 2vw;
+}
+
+
+body > div.container-fluid > div.row > div:nth-child(1) > button{
+    background-color: transparent;
+    border-color: transparent;
+    padding: 0;
+    border: 0;
+}
+
+/* removes outline when video is selected and modal is open */
+body > div.container-fluid > div.row > div:nth-child(1) > button:focus{
+   outline: 0;
+}
+
+
+/* removes outline when video is selected and modal is open */
+body > div.container-fluid > div.row > div:nth-child(1) > button:hover{
+   outline: 10px;
+ }
+
+/* PROJECT CONTENT BOX */
+ #SHAKE > div > div > div.modal-body > div.projectContent{
+     padding-top: 20px;
+    padding-left: 150px;
+    padding-right: 150px;
+ }
+
+ #SHAKE > div > div > div.modal-body > div.projectContent2{
+    padding-top: 20px;
+   padding-left: 150px;
+   padding-right: 150px;
+   background-color: #F5F5F7;
+}
+
+ /* PROJECT SUBTITLE */
+ /* DARK */
+ body.dark #SHAKE > div > div > div.modal-body > div.projectContent >h2{
+   /* font-family: "AeonikLight"; */
+   font-family: 'Lato', sans-serif;
+   font-size: 1.2vw;
+   /* color: #888888; */
+   
+}
+
+/* dark mode white heading highlight */
+body.dark #SHAKE > div > div > div.modal-body > div.projectContent > span{
+  background-color: #fafafa;
+  color: #1d1d1f;
+}
+
+/* PROJECT TITLE */
+body.dark #SHAKE > div > div > div.modal-body > div.projectContent >h3{
+    font-family: "Aeonik";
+    font-size: 1.8vw;
+    color: #F5F5F7;
+    margin-top: 0;
+ }
+
+
+  /* LIGHT */
+ #SHAKE > div > div > div.modal-body > div.projectContent >h2{
+    font-family: "Aeonik";
+    font-size: 1.2vw;
+    color: #888888;
+  
+ }
+ 
+ /* PROJECT TITLE */
+#SHAKE > div > div > div.modal-body > div.projectContent >h3{
+     font-family: "Aeonik";
+     font-size: 1.8vw;
+     color: #1d1d1f;
+     margin-top: 0;
+  }
+
+  #SHAKE > div > div > div.modal-body > div.projectContent >p{
+    font-family: "Aeonik";
+    font-size: 1.2vw;
+   
+ }
+
+ #SHAKE > div > div > div.modal-body > div > ul{
+  margin-left: 0;
+  padding-left: 15px;
+  font-family: "Aeonik";
+    font-size: 1.2vw;
+}
+
+.TwoCol > ul{
+  margin-left: 0;
+  padding-left: 15px;
+  font-family: "Aeonik";
+    font-size: 1.2vw;
+}
+.ThreeCol > ul{
+  margin-top: 10px;
+  margin-left: 10px;
+  padding-left: 15px;
+  font-family: "Aeonik";
+    font-size: 1.2vw;
+}
+
+ /* bit explaining my role */
+ .ProjectCol {
+    float: left;
+    width: 33.33%;
+  }
+
+  .ProjectCol >img {
+    /* float: left; */
+    width: 100%;
+  }
+
+  .TwoCol {
+    float: left;
+    width: 50%;
+  }
+
+  .TwoCol >img {
+    /* float: left; */
+    width: 90%;
+    position: relative;
+    padding-left: 20px;
+  }
+
+  .TwoCol >video {
+    /* float: left; */
+    width: 100%;
+    position: relative;
     padding: 5px;
-    /* margin-left: 0px; */
-}
+    margin-top: 5px;
+  }
+  .TwoCol >h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 0.9vw;
+    color: #888888;
+  }
 
-.tnplh {
-    margin-left: 20%;
-}
+  .TwoCol > h3{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2vw;
+    color: #888888;
+  }
 
-/* 600 LAYOUT */
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+  .TwoCol > p{
+    font-family: "Aeonik";
+    font-size: 1.2vw;
+    padding-right: 25px;
+  }
 
+  .FourCol >h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 0.9vw;
+    color: #888888;
     
-    .arrows>span {
+  }
 
-        float: left;
-        padding: 0 20px;
+  .FourCol >h3 {
+    font-family: 'Lato', sans-serif;
+    font-size: 01.2vw;
+    color: #888888;
+    
+  }
 
-        color: black;
-        font-weight: bold;
-        font-size: 25px;
-        margin-bottom: 10px;
+  .FourCol {
+    float: left;
+    width: 25%;
+    
+  }
 
-    }
+  .FourCol >img {
+    /* float: left; */
+    width: 90%;
+    position: relative;
+    padding-left: 10px;
+  }
+  .FourCol > p{
+    font-family: "Aeonik";
+    font-size: 1.2vw;
+    padding-right: 25px;
+  }
 
-    .arrows>p {
-        float: left;
-        padding: 0 10px;
-        color: black;
-        /* font-size: 80px; */
-        margin-bottom: 20px;
 
-    }
+  .ThreeCol >h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 0.9vw;
+    color: #888888;
+    
+  }
 
-    .arrows>a {
-        float: left;
-        padding: 0 10px;
-        color: black;
-        margin-bottom: 20px;
-        text-decoration: none;
-        font-size: 20px;
-    }
+  .ThreeCol >h3 {
+    font-family: 'Lato', sans-serif;
+    font-size: 01.2vw;
+    color: #888888;
+    
+  }
 
-    .arrows>a:hover {
-        text-decoration: underline;
-    }
+  .ThreeCol {
+    float: left;
+    width: 33.3%;
+    
+  }
+  .ThreeCol > p{
+    font-family: "Aeonik";
+    font-size: 1.2vw;
+    padding-right: 25px;
+  }
+  .ThreeCol >img {
+    /* float: left; */
+    width: 100%;
+    position: relative;
+    padding-left: 10px;
+  }
 
-    .projColumn {
-        width: 100%;
-    }
+  /* Clear floats after the columns */
+.ProjectRow:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 
-    .projRow {
-        margin: 0%;
-        padding: 0 5px;
+ .projectOverview{
+  
+     /* border-radius: 10px; */
+    padding: 5px;
+    display: flex;
+    
+ }
 
-    }
+ .ProjectCol >h2{
+    font-family: 'Lato', sans-serif;
+   font-size: 0.9vw;
+   color: #888888;
+}
 
-    .projColumn p {
-        font-size: 15px;
+.ProjectCol >p{
+    font-family: "Aeonik";
+    font-size: 1.2vw;
+ }
 
-    }
-
-    .projColumn h2 {
-        font-size: 15px;
-    }
-
-    .projRow h3 {
-        color: rgb(0, 0, 0);
-        font-size: 16px;
-        font-weight: normal;
-    }
-
-    .projRow a {
-        color: black;
-        font-size: 15px;
-        font-weight: lighter;
-        text-decoration: none;
-    }
-
-    .research {
-        margin: 0;
-        /* display: inline-block; */
-        width: 100vw;
-        padding: 0 15px;
-        font-size: 16px;
-    }
-
-    .research img {
-        padding: 2px;
-        
-    }
-
-    .research h2 {
-        color: rgb(197, 197, 197);
-        font-size: 17px;
-        font-weight: lighter;
-    }
-
-    .nextProject p {
-        margin: 10px;
-    }
-
-    .Gif {
-        /* margin-left: 20%; */
-        margin-left: 1px;
-        /* padding: 0 10px; */
-        width: 100%;
-        /* width: 100vw; */
-        /* margin-top: 20px; */
-    }
+ .projectContent >img{
+width: 100%;
+ }
 
 
 
-    .column {
-        -ms-flex: 100%;
-        flex: 100%;
-        max-width: 100%;
-
-        /* margin on top of when they stakc on top of each other  */
-        /* margin-top: 70px; */
-
-    }
-
-    .videoWrapper iframe {
-        position: absolute;
-        top: 0;
-        left: 0%;
-        width: 100%;
-        height: 100%;
-        margin: 0;
-        padding: 0 10px;
-    }
-
-    .videoWrapper {
-
-        margin-bottom: 0%;
 
 
-    }
+ /* MOBILE MODAL */
+ @media (max-width: 812px) {
+    /* .modal-xl {
+      width: 100%;
+     /* max-width:1200px; */
+     
+    
 
-    .sidebar {
-        margin-top: 10px;
-        padding: 0 15px;
-        width: 83%;
+    #SHAKE > div > div > div.modal-body{
+        /* padding: 10px; */
+        margin: auto;
         position: relative;
-        height: 100%;
-        text-align: left;
-        font-size: 16px;
-        /* display: none; */
-
-
     }
-
-    .sidebar h1 {
-        text-decoration: none;
-        color: rgb(38, 38, 38);
-        font-size: 20px;
-        font-weight: normal;
-
+    #SHAKE > div > div > div.modal-body > div.projectContent{
+      padding-left: 20px;
+      padding-right: 20px;
     }
-
-
-    .sidebar p {
-        display: inline-block;
-        color: black;
-        width: 100%;
-        text-align: left;
-        text-decoration: none;
-        line-height: 20px;
-    }
+  }
 
 
 
+  /* PAUSE */
+  body > div.container-fluid > div.row > div:nth-child(2) > button{
+    background-color: transparent;
+    border-color: transparent;
+    padding: 0;
+    border: 0;
+  }
 
-    .sidebar .links {
-        display: inline-block;
-        margin-right: 200px;
-        /* padding: 0px 20px; */
+  body > div.container-fluid > div.row > div:nth-child(2) > button:focus{
+    outline: 0;
+ }
 
-        line-height: 25px;
-    }
+  body.dark > div.container-fluid > div.row > div:nth-child(2) > button{
+    background-color: transparent;
+    border-color: transparent;
+    padding: 0;
+    border: 0;
+  }
 
-    .content h3 {
-        margin-bottom: -50px;
-        padding: 0px 5px;
-
-    }
-
-
-    /* formatting for information page */
-    div.Info {
-        float: left;
-        margin-left: 0;
-        /* padding: 1px 25px; */
-        padding: 0 15px;
-        /* height: 1000px; */
-        line-height: 19px;
-
-    }
-
-    div.Info h6 {
-        color: 0;
-        font-size: 17px;
-        font-weight: normal;
-    }
-
-    div.Info h4 {
-        /* font-size: 15px; */
-        color: 0;
-        font-size: 17px;
-        font-weight: lighter;
-        text-decoration: underline;
-    }
-
-    div.Info p {
-        /* color: rgb(197, 197, 197); */
-        font-weight: lighter;
-        font-size: 17px;
-        /* text-decoration: underline; */
-    }
-
-    div.Info h5 {
-        color: rgb(197, 197, 197);
-        font-weight: lighter;
-        font-size: 17px;
-        /* text-decoration: underline; */
-    }
+  body.dark > div.container-fluid > div.row > div:nth-child(2) > button:focus{
+    outline: 0;
+ }
 
 
-    /* hides sidebar from mobile project dispaly */
-    .onMobile {
-        display: none;
-    }
+/* PAUSE MODAL STYLING */
+#PAUSE > div > div > div.modal-body > img{
+  background-color: #fafafa;
+  
+}
+#PAUSE > div > div > div.modal-header{
+  padding: 0;
+}
+
+#PAUSE > div > div > div.modal-header > img{
+  background-color: #fafafa;
+}
+
+#PAUSE > div > div > div.modal-body > div.projectContent {
+  padding-top: 20px;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+#PAUSE > div > div > div.modal-body > div.projectContent >h2 {
+  font-family: "Aeonik";
+  font-size: 1.2vw;
+  color: #888888;
+}
+
+#PAUSE > div > div > div.modal-body > div.projectContent >h3 {
+  font-family: "Aeonik";
+  font-size: 1.8vw;
+  color: #1d1d1f;
+  margin-top: 0;
+}
+
+#PAUSE > div > div > div.modal-body > div.projectContent >p {
+  font-family: "Aeonik";
+  font-size: 1.2vw;
+}
+
+#PAUSE > div > div > div.modal-body > div > ul{
+  margin-left: 0;
+  padding-left: 15px;
+  font-family: "Aeonik";
+    font-size: 1.2vw;
+}
 
 
-    /* replaces sidebar with name and arrow */
-    .mobileSidebar h1 {
-        /* padding: 0 10px; */
-        text-decoration: none;
-        color: rgb(38, 38, 38);
-        font-size: 20px;
-        font-weight: normal;
-        padding: 0 20px;
-        /* padding-top: 20px; */
-    }
+/* PAUSE DARK MODE */
+body.dark #PAUSE > div > div > div.modal-body > img{
+  background-color: #1d1d1f;
+  
+}
 
-    /* content {
-       display: block;
-       object-fit: scale-down
-        
-    }; */
+body.dark #PAUSE > div > div > div.modal-body {
+  background-color: #1d1d1f;
+  
+}
 
-    /* .topMargin{
-        margin-top: 270px;
-    } */
-/*     
-    /* .content video{
-        object-fit: scale-down;
-        margin-bottom: 0px;
-        padding-bottom: 0px;
-        height: 18%;
-        
-       
-        
-    } */ 
+body.dark #PAUSE > div > div > div.modal-header > img{
+  background-color: #1d1d1f;
+}
+
+body.dark #PAUSE > div > div > div.modal-body > div.projectContent {
+  padding-top: 20px;
+  padding-left: 150px;
+  padding-right: 150px;
+  background-color: #1d1d1f;
+}
 
 
-    /* .content img{
-        object-fit: scale-down;
-        margin-bottom: 0px;
-        padding-bottom: 0px;
-    } */
-
-    
-    /* .captionTitle a {
-        text-decoration: none;
-        color: rgb(38, 38, 38);
-        font-size: 20px;
-        font-weight: normal;
-        margin-top: 0px;
-    }
-    
-    .captionTitle a:hover {
-        text-decoration: underline;
-    } */
-    
-    /* .captionDetail {
-        color: rgb(194, 194, 194);
-        font-size: 20px; */
-        /* margin-top: ; */
-        /* margin-top: 10px;
-        margin-bottom: 10px;
-        font-weight: lighter;
-    } */
 
 
-    
+
+/* UHOH MODAL STYLING */
+#UHOH > div > div > div.modal-body > img{
+  background-color: #fafafa;
+  
+}
+#UHOH > div > div > div.modal-header{
+  padding: 0;
+}
+
+#UHOH > div > div > div.modal-header > img{
+  background-color: #fafafa;
+}
+
+#UHOH > div > div > div.modal-body > div.projectContent {
+  padding-top: 20px;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+#UHOH > div > div > div.modal-body > div.projectContent >h2 {
+  font-family: "Aeonik";
+  font-size: 1.2vw;
+  color: #888888;
+}
+
+#UHOH > div > div > div.modal-body > div.projectContent >h3 {
+  font-family: "Aeonik";
+  font-size: 1.8vw;
+  color: #1d1d1f;
+  margin-top: 0;
+}
+
+#UHOH > div > div > div.modal-body > div.projectContent >p {
+  font-family: "Aeonik";
+  font-size: 1.2vw;
+}
+
+body #UHOH > div > div > div.modal-footer > button{
+  background-color: #fafafa;
+  border-color: transparent;
+  color: #1d1d1d;
+  font-size: 1vw;
+  text-shadow: rgb(255 255 255) 0px 1px 0px;
+  opacity: 0.5;
+}
+
+body #UHOH > div > div > div.modal-footer > button:hover{
+  opacity: 0.5;
 
 }
+
+#UHOH > div > div.modal-footer{
+  background-color: #fafafa;
+}
+
+
+
+
+
+
+#contact > hr.lineBreak{
+  height:0.4vw;
+  border:none;
+  color:#f5f5f5 ;
+  background-color:#f5f5f5;
+}
+
+ #contact > p:nth-child(2){
+  color:#f5f5f5;
+}
+
+body.dark #contact > hr.lineBreak{
+  height:0.4vw;
+  border:none;
+  color:#1d1d1f;
+  background-color: #1d1d1f;
+}
+
+body.dark #contact > p:nth-child(2){
+  color:#1d1d1f;
+}
+
+
+body.dark #projectIndex > p{
+  color: #1d1d1f;
+  }
+  body #projectIndex > p{
+    color: #f5f5f5;
+    }
+
+    body > div.container-fluid > hr{
+  height:0.4vw;
+  border:none;
+  color:#f5f5f5 ;
+  background-color:#f5f5f5;
+}
+
+body.dark > body > div.container-fluid >  hr{
+  height:0.4vw;
+  border:none;
+  color:#1d1d1f;
+  background-color: #1d1d1f;
+}
+

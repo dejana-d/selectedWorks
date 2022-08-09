@@ -3,111 +3,818 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home</title>
-    <link rel="stylesheet" href="style.css">
-   <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RNMRBER149"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <title>dejana draganić</title>
 
-  gtag('config', 'G-RNMRBER149');
-</script>
+    <!-- bootstrap modal -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- lato font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- this sidebar is for desktop & mobile homepage only -->
-    <div class="sidebar">
-        <!-- <a class="active" href="index.html">Dejana Draganić</a> -->
-        <h1><a href="index.html">Dejana Draganić</a></h1>
-        <p><br>Hi! <br>My name is pronounced Dey–ana and I’m an interdisciplinary designer & researcher. <br><br>I experiment with machine learning to create positive interactions and to spark critical discourse. </p> 
-      <p>I'm curious about shaping alternative futures with design fiction.</p>
-        <p>Currently reading:<br>David Graeber's Utopia of Rules.</p>
-        <p>Also training a styleGAN on<br><a href="https://mitpress.mit.edu/books/siteless">this book.</a></p>
-        <div class="links"><br><br>
-        <a href="mailto:draganic.dejana@gmail.com">Email</a>
-        <a href="https://www.linkedin.com/in/dejana-draganić/">LinkedIn</a>
-        <!-- <a href="information.html">Information</a> -->
-        <p>©2022</p>  
-            <!-- <hr> -->
-            </div>
-          
+    <div class="container-fluid">
+      <div class="navbar">
+        
+        <div class="navbarLeft">
+            <a href="#" onclick="smoothScroll(document.getElementById('projectIndex'))">Index, </a>
+            <p>&nbsp;</p>
+            <a href="#" onclick="smoothScroll(document.getElementById('contact'))">Contact,</a>
+
+            <nav class="nav">
+                <ul>
+                  <li>
+                    <button class="dark-button">Dark <i class="zmdi zmdi-brightness-2 zmdi-hc-fw"></i> </button>
+                  </li>
+                  <li>
+                    <button class="light-button" hidden="hidden">Light <i class="zmdi zmdi-sun zmdi-hc-fw"></i></button>
+                  </li>
+                </ul>
+              </nav>
+        </div>
+     
       </div>
-      
-      <div class="content">
-       
-              <!-- Photo Grid -->
+
+
+     
+      <main>
+
+      <div class="intro">
+          <p>Hey 👋 I'm <span class="dejana"></span>. 
+            <!-- <br><br>I design <span class="homeHover">interfaces</span>,
+            <br> develop <span class="homeHover">web–based tools</span> for wellbeing, 
+            <br>and create <span class="homeHover">experiences</span>.
+            <br><br> -->
+            <br><br>
+            I create <span style="color: rgb(153, 211, 124);">human–centered <br>tools</span> for wellbeing.<br><br>
+            I also make <span style="color: rgb(153, 211, 124);">films</span> about AI <br>to spark critical discourse. 
+            <br><br>Currently studying <a href="http://lcfi.ac.uk/" target="_blank" ><span class="homeHover">AI Ethics & Society</span>
+            </a> <br>at the University of Cambridge.
+            <!-- <br><Br>I'm curious about shaping alternative futures with design fiction.
+              <br><br>Currently reading X. Also training a styleGAN on this book.</p> -->
+    
+              
+        </div>
+      </main>
+      <hr class="lineBreak">
+      <!-- new header -->
+      <div class="projectIndex"  id="projectIndex">
+        
+        <p >Index</p></div>
+        <!-- PHOTO GRID -->
 <div class="row"> 
-    
     <div class="column">
+<!-- BOOTSRAP MODAL: SHAKE IT OUT -->
+ <!-- Trigger the modal with a button -->
+ <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#SHAKE"> <img src="desktopShake.png" style="width:100%"></button><figcaption class="figTitle">SHAKE IT OUT<span>Ongoing</span></figcaption>
+        <figcaption class="figInfo">Interaction Design, UX Research, Machine Learning</figcaption>
 
-        <!-- <figcaption class="captionDetail">Selected works</figcaption> -->
-        <!-- left hand side content -->
-
-        <a href="shake.html"><video width=100% src="indexShakeBlue.mp4" type="null" muted="" autoplay="" loop=""></video></a>
-        <figcaption><div class="captionTitle"><a href="shake.html">Shake It Out</a></div></figcaption>
-        <figcaption class="captionDetail">Interaction Design, Machine Learning, poseNet</figcaption>
-
-
-        <a href="biggerSmile.html"><video width=100% src="indexabiggersmile.mp4" type="null" muted="" autoplay="" loop=""></video></a>
-        <figcaption><div class="captionTitle"><a href="biggerSmile.html">A Bigger Smile</a></div></figcaption>
-        <figcaption class="captionDetail">Critical Design, Machine Learning, StyleGANs</figcaption>
-        
-        <a href="filter.html"><video width=100% src="filter1.mp4" type="null" muted="" autoplay="" loop=""></video></a>
-        <figcaption><div class="captionTitle"><a href="filter.html">Hot New Graphic Designers</a></div></figcaption>
-        <figcaption class="captionDetail">Digital Identity Design, Spark AR</figcaption>
-
-
-        <a href="screenshot.html"><video width=100% src="ScreenshotIndex.mp4" type="null" muted="" autoplay="" loop=""></video></a>
-        <figcaption><div class="captionTitle"><a href="screenshot.html">[screenshot]</a></div></figcaption>
-        <figcaption class="captionDetail">Publication Design, Data Visualisation</figcaption>
-
-        <a href="hoody.html"> <video width=100% src="hoody.mp4" type="null" muted="" autoplay="" loop=""></video></a>
-        <figcaption><div class="captionTitle"><a href="hoody.html">BA Graphic Design Fashion Show </a></div></figcaption>
-        <figcaption class="captionDetail">Virtual Garment</figcaption>
-        
-       
+ <!-- Modal -->
+ <div class="modal fade" id="SHAKE" role="dialog">
+   <div class="modal-dialog modal-xl">
+   
+     <!-- Modal content-->
+     <div class="modal-content">
+       <!-- <div class="modal-header">
+         <button type="button" class="close" data-dismiss="modal">&times;</button>
+         <h4 class="modal-title" >Modal Header</h4>
+       </div> -->
+       <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+         <p><div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/560114671?h=686984616c&title=0&byline=0&portrait=0" style="position:absolute;top:-10px;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script></p>
     
+    <!-- PROJECT TITLE + SUMMARY -->
+         <div class="projectContent"> <h2>WEB–BASED TOOL, MACHINE LEARNING</h2>
+    <h3>Shake It Out</h3>
+    <hr>
+        <p>Shake It Out is a web app which utilises machine learning to encourage a burst of movement in 30 seconds, in order to improve physical and mental wellbeing while working from home.
+<br><Br>
+            Do you sit for hours, hunched over your screen? Are you struggling to focus? Do you need a quick rush of endorphins but can’t leave your desk? Shake It Out offers a playful solution to alleviate pain points associated with working from home.
+            <br>
+            <br>
+            <!-- <a href="#">case study pdf ➜</a> -->
+            <hr>
+        </p>
+        <!-- PROJECT CONTEXT -->
+        <div class="ProjectRow">
+            <div class="ProjectCol"><h2>CONTEXT</h2>
+                <p>Creative Computing<br> Institute Brief</p></div>
+                <div class="ProjectCol">
+            <h2>PROJECT DELIVERABLES</h2>
+            <p>Single User App<br>
+                Chrome extension in development</p></div>
+                <div class="ProjectCol">   <h2>TOOLS</h2>
+                    <p>p5.js, poseNet, html, css,<br>Premiere Pro </p></div>
+        </div>
+        <hr>
 
-    </div>
-    <div class="column">
-      
-        <!-- right hand side content -->
-        <!-- Pause is resized to fill mobile screen better -->
-        <div class="topMargin">
-        <div class="pauseVideo">
-            <a href="pause.html"><video width=60% src="pause.mp4" type="null" muted="" autoplay="" loop=""></video></a>
+        <!-- PROBLEM + SOLUTION -->
+        <h2>BRIEF</h2>
+        <ul>
+          <li>Design a playful and/or caring interaction using <a href="https://www.ibm.com/uk-en/topics/computer-vision">computer vision.</a></li>
+        </ul>
+        
+        <hr>
+
+        <h2>DESIGN PROCESS</h2>
+        <p>My process consisted of 5 stages. Empathise: I conducted <span style="background-color: rgba(131,225,254,0.5); color: #1d1d1f;">remote interviews and secondary research</span>. 
+          Define: <span style="background-color: rgba(131,225,254,0.5); color: #1d1d1f;">a synthesis of everything learned</span> in empathise phase including pain points, personas, user stories and user journeys. 
+          Ideation involved <span style="background-color: rgba(131,225,254,0.5); color: #1d1d1f;">generating lots of ideas quickly</span> and evaluating those ideas by feasability, desirability and viability. 
+          Prototyping followed Henrik Kniberg’s metaphorical diagram in order to develop a working prototype, before testing and <span style="background-color: rgba(131,225,254,0.5); color: #1d1d1f;">iterating the design in response to usability studies.</span></p>
+
+        <img src="iterativeProcess-01.png" >
+        <hr style="color:#333;">
+        
+            <h2>EMPATHISE | METHODOLOGIES</h2>  
+            <h2><span style="background-color: rgba(131,225,254,0.5); color: #1d1d1f;">Foundational research goal:</span> to make sure there is a need for a playful and/or caring interaction when working from home.</h2>
+            <div class="ProjectRow">
+                <div class="TwoCol">
+                    <h2>INTERVIEWS</h2>
+                    <p>Goal was to <span style="background-color: rgba(131,225,254,0.5); color: #1d1d1f;">identify common user behaviours and experiences</span> with working from home. <br>
+                      I asked open–ended questions to encourage long–form answers and to <span style="background-color: rgba(131,225,254,0.5); color: #1d1d1f;">overcome confirmation bias.</span> <br>
+                      All interviews were conducted over video calls as we were in lockdown!<br> 
+                      I used <span style="background-color: rgba(131,225,254,0.5); color: #1d1d1f;">aggregated empathy maps to visualise</span> interview findings.  </p><br> 
+                    </div>
+                    <div class="TwoCol">
+                       <br> <img src="empathyMap01.png">
             </div>
-        <figcaption><div class="captionTitle"><a href="pause.html">Pause</a></div></figcaption>
-        <figcaption class="captionDetail">Web Development, Code First Girls</figcaption></div>
+                </div>
+
+                <div class="ProjectRow">
+                    <div class="TwoCol">
+                       <br>
+                        <h2>SURVEYS</h2>
+                        <p>Goal of online survey was to <span style="background-color: rgba(131,225,254,0.5); color: #1d1d1f;">gather quantitative data</span> and solidify my understanding of pain points associated with sedentary life, working from home. 
+                          By surveying a larger audience, I was able to validate my findings.</p></div>
+                        <div class="TwoCol">
+                           <br> 
+                           <br><img src="survey-03.png">
+                </div>
+                    </div>
+                <br><br>
+  
+                <h2>EMPATHISE | KEY FINDINGS</h2> 
+                <div class="ProjectRow">
+                    <div class="FourCol"><h3>100%</h3>
+                        <p>work on device with camera or webcam</div>
+                        <div class="FourCol">
+                    <h3>93%</h3>
+                    <p>struggle to concentrate and stay productive from home</p></div>
+                        <div class="FourCol">   <h3>100%</h3>
+                            <p>sit for longer at their screens when working from home </p></div>
+                            <div class="FourCol">   <h3>74%</h3>
+                                <p>regularly use the Pomodoro technique to encourage focus</p></div>
+                </div>
+
+                <div class="ProjectRow">
+                    <div class="FourCol"><h3>93%</h3>
+                        <p>are open to novel forms of technology including games</div>
+                        <div class="FourCol">
+                    <h3>98%</h3>
+                    <p>wish they could get more exercise when working from home</p></div>
+                        <div class="FourCol">   <h3>12%</h3>
+                            <p>commit time to exercising from home</p></div>
+                            <div class="FourCol">   <h3>96%</h3>
+                                <p>are unhappy with their increasingly sedentary lifestyle in lockdown</p></div>
+                </div><br>
+                <!-- <hr> -->
+                <h2>EMPATHISE | PERSONAS</h2> 
+                <br>
+                <img src="ChristinaPersona.png">
+                <br><br>
+                <img src="MiloPersona.png">
+                <br><br>
+                <h2>EMPATHISE | USER STORIES</h2> <br>
+                <div class="ProjectRow">
+                    <div class="TwoCol">
+                        <img src="ChristinaStory.png">
+                        </div>
+                        <div class="TwoCol">
+                            <img src="MiloStory.png">
+                </div>
+                    </div>   <br>   
+                <Hr>
+
+                <h2>DEFINE | METHODOLOGIES</h2> 
+                <div class="ProjectRow">
+                    <div class="TwoCol">
+                        <h2>PROBLEM STATEMENT</h2>
+                        <p>Goal is to <span style="background-color: rgba(131,225,254,0.5); color: #1d1d1f;">synthesise research findings and create a human–centered description</span> 
+                          of the user’s needs that should be addressed. </p>
+                          <ul>
+                            <li>Milo is a student with ADHD who needs something engaging to do in less than 5 minutes, because they rely on taking Pomodoro breaks</li>
+                            <li>Christina is a sociable recruiter who needs playful interactions with her colleagues because she feels isolated working from home</li>
+                          </ul>
+                    
+                          
+                </div>
+                        <div class="TwoCol">
+                            <h2>HOW MIGHT WE..?</h2>
+                            <p>The goal is to encourage innovation by reframing user's problems.</p>
+                            <ul>
+                              <li>how might we help Milo feel positive about taking Pomodoro breaks?</li>
+                              <li>how might we help Christina connect with her colleagues?</li>
+                              <li>how might we develop a solution for people trying to take a playful break from work?</li>
+                            </ul>
+                           
+                            
+                </div>
+                    </div> 
+                    <hr>
+                    <!-- <h2>IDEATE | METHODOLOGIES</h2> -->
+                    <h2>IDEATE | METHODOLOGIES</h2>
+                    <div class="ProjectRow">
+                        <div class="TwoCol">
+                            <h2>CRAZY 8s</h2>  
+                            <p>I love using Crazy 8s to generate lots of ideas quickly and freely without evaluating while sketching. </p>
+                            <p>I've used it in group settings in some of my teaching here. Crazy 8s is my go–to for 
+                              <span style="background-color: rgba(131,225,254,0.5); color: #1d1d1f;">ideating without overthinking.</span></p>
+                           
+                            </div>
+                           
+                            <div class="TwoCol"> 
+                                <img src="crazy8.png" >
+                
+                            </div>
+                    </div>
+                    <br>
+                    <div class="ProjectRow">
+                    <div class="TwoCol"> 
+                        <h2>COMPETITIVE AUDIT</h2>  
+                        <p>Goal is to reveal gaps in the market, overview of the strengths and weaknesses of similar products on the market.</p>
+                        <p>I find this method particularly useful to consider the expected life cycle of product in the same market.
+                        </p>
+                    </div>
+                    </div>
+                    <hr>
+                    <!-- <h2>PROTOTYPE | METHODOLOGIES</h2> -->
+                    <h2><span class="whiteHighlight">PROTOTYPE | METHODOLOGIES</span> </h2>
+                    <div class="ProjectRow">
+                        <div class="TwoCol">
+                            <h2>HENRIK KNIBERG</h2>  
+                            <P>I always refer to Henrik Kniberg’s metaphorical diagram when faced with a more complex task. 
+                              The framework allows me to tackle programming iteratively, starting with basic functionality. <br>
+                             <ul>
+                               <li>The goal is to develop a low–fidelity prototype in order to 
+                                <span style="background-color: rgba(131,225,254,0.5); color: #1d1d1f;">test early concepts with users as soon as possible.</span></li>
+                             </ul>
+                                </P>
+                            </div>
+                           
+                            <div class="TwoCol"> 
+                                <br>
+                                <img src="HENRIK.png" >
+                
+                            </div>
+                    </div>
+<br>
+                    <!-- PROTOTYPE VIDEOS -->
+                    <div class="ProjectRow">
+                        <div class="TwoCol">
+                            <video width="100%" src="https://www.dejanadesign.me/step0.mp4" type="null" muted="" autoplay="" loop="" style="    object-fit: cover;
+                            object-position: center;"></video>
+
+                            <video width="100%" src="https://www.dejanadesign.me/step3.mp4" type="null" muted="" autoplay="" loop="" style="    object-fit: cover;
+                            object-position: center;"></video>
+                            </div>
+                           
+                            <div class="TwoCol"> 
+                                <video width="100%" src="https://www.dejanadesign.me/step2.mp4" type="null" muted="" autoplay="" loop="" style="    object-fit: cover;
+                            object-position: center;"></video>
+                             <video width="100%" src="https://www.dejanadesign.me/step4.mp4" type="null" muted="" autoplay="" loop="" style="    object-fit: cover;
+                             object-position: center;"></video>
+                            </div>
+                        </div>
+                    <br>
+                    <hr>
+                    <h2><span class="whiteHighlight">TEST | USABILITY STUDY</span> </h2>
+
+                    <div class="ProjectRow">
+                        <div class="TwoCol">
+                            <h2>DESIGN RESEARCH GOALS</h2>
+                            <ul>
+                              <li>to understand if users find the timer and/or the points system necessary and useful</li>
+                              <li>to understand <span style="background-color: rgba(131,225,254,0.5); color: #1d1d1f;">how to build the product</span> for next iteration and 
+                                which features to include</li>
+                            </ul>
+                          
+                            <!-- <br> -->
+                            </div>
+                    </div>
+
+                    <div class="ProjectRow">
+                        <div class="TwoCol">
+                
+                            <h2>UNMODERATED STUDY</h2>
+                            <ul>
+                              <li>5 participants completed the task in their own space and at their own time</li>
+                              <li>chance to 
+                                <span style="background-color: rgba(131,225,254,0.5); color: #1d1d1f;">test the interactive prototype in the real world</li>
+                                  <li>Participants recorded their interaction from start to finish and answered survey after</li>
+                            </ul>
+                            
+                              <br>
+                              <h2>SYSTEM USABILITY SCALE (SUS)</h2>
+                              <ul>
+                                <li>Quick and useful way to see if the design is working</li>
+                                <li>Useful <span style="background-color: rgba(131,225,254,0.5); color: #1d1d1f;">
+                                  method to benchmark progress</span> and compare throughout design process</li>
+                                  <li>Overall score of 62.5 </li>
+                              </ul>
+                             
+                        
+<br>
+                        
+                             
+                        </div>
+                            <div class="TwoCol">
+                                <br>
+                                <img src="usability.png">
+                                <br><br>
+                                <img src="sus.png">
+                            </div>
+
+                          
+                            </div>
+                           
+                            <div class="ProjectRow">
+                              <div class="TwoCol">
+                                <h2>AFFINITY DIAGRAM</h2>
+                                <ul>
+                                  <li>
+                                    one of my favourite ways to draw out common themes in observations and 
+                                    <span style="background-color: rgba(131,225,254,0.5); color: #1d1d1f;">to organise qualitative data 
+                                  </li>
+                                  <li>I find Padlet a great tool for this whether working by myself of collaboratively</li>
+                                </ul>
+                                
+                                </div>
+                                <div class="TwoCol"><br>
+                                  <img src="affinity.png">
+                                </div>
+                                </div>
+                                <br>
+
+                                <hr>
+                            <h2>TEST | KEY INSIGHTS</h2>
+                            <div class="ProjectRow">
+                              <div class="ThreeCol"><h3>4 OUT OF 5</h3>
+                                  <p>users find it useful and motivational to see a timer,
+                                  an insight is:<br><span style="background-color: rgba(131,225,254,0.5); color: #1d1d1f;">users need a clear countdown clock.</span></p></div>
+                                  <div class="ThreeCol">
+                              <h3>3 OUT OF 5</h3>
+                              <p>find the score counter distracting, an insight is:<br><span style="background-color: rgba(131,225,254,0.5); color: #1d1d1f;">users points to be revealed a er the interaction rather than during.</span>
+                                  </p></div>
+                                  <div class="ThreeCol">   <h3>2 OUT OF 5</h3>
+                                      <p>users were unfamiliar with the swiping call to action, an insight is:<br><span style="background-color: rgba(131,225,254,0.5); color: #1d1d1f;">users need clearer instructions.</span></p></div>
+                          </div>
+                           
+                
+                            <br>
+                           
+                                <h2>TEST | LIMITATIONS</h2>
+                                <ul>
+                                  <li>test with a larger user group</li>
+                                  <li>test with a more neurodiverse group, specifically users with ADHD</li>
+                                  <li>ensure future usability studies are performed during user's work hours to measure product closer to real world scenarios</li>
+
+
+
+                                </ul>
+                              
+
+                                   <hr>
+                            <h2>PROTOTYPE | USER INTERFACE REDESIGN </h2>
+                            
+                              <p>
+                                Goal is to <span style="background-color: rgba(131,225,254,0.5); color: #1d1d1f;">respond to user needs</span> gathered from usability studies and iterate on interactive prototype.
+                              </p>
+                              <br>
+                            
+                            
+                                <!-- redesign images in three columns -->
+                                <div class="ProjectRow">
+                                  <!-- colum 1 -->
+                                  <div class="ThreeCol">
+                                    <img src="redesign1.png">
+                                    <ul>
+                                      <li>
+                                        Initial screen displays larger text instructions
+                                      </li>
+                                    </ul>
+
+                                  </div>
+
+                                  <!-- column 2 -->
+                                  <div class="ThreeCol">
+                                    <img src="redesign2.png">
+                                    <ul>
+                                      <li>
+                                        Timer is more prominenent in a fixed position
+                                      </li>
+                                    </ul>
+                                    
+                                  </div>
+
+                                  <!-- colmn 3 -->
+                                  <div class="ThreeCol">
+                                    <img src="redesign3.png">
+                                    <ul>
+                                      <li>
+                                        Score revealed after 30 second interaction is complete, this way there is some anticiaption  
+                                      </li>
+                                    </ul>
+                                    
+                                  </div>
+                                </div>
+                                <br>
+                                <hr>
+                                <h2>CURRENT STATUS | LOOKING FORWARD </h2>
+                                <ul>
+                                  <li>Currently refining design and researching for chrome extension</li>
+                                  <li>Next steps include another round of usability studies</li>
+                                  
+                                </ul>
+                                <br>
+
+                                <video width="100%" src="https://www.dejanadesign.me/indexShakeBlue.mp4" type="null" muted="" autoplay="" loop="" style="    object-fit: cover;
+    object-position: center;"></video>
+                            
+
+                          
+
+                    
+
+
+                    
+
+        <!-- DESIGN PROCESS -->
+    
+        <!-- <img src="start with why.png" width="400px">
+        <img src="tweet.png" width="400px"> -->
+    </div>
+    <!-- <div class="projectContent2">
+        <h2>User Research</h2>
+    </div> -->
+        </div>
+       <div class="modal-footer">
+         <button type="button" class="btn btn-default" data-dismiss="modal">back</button>
+       </div>
+     </div>
+     
+   </div>
+ </div>
+
+
+<!-- SECOND PROJECT IN SECOND COLUMN -->
+<!-- BOOTSTRAP MODAL: PASUE APP -->
+      <!-- Trigger the modal with a button -->
+      <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#UHOH"> 
+        <img src="pauseMobile.png" style="width:100%"></button><figcaption class="figTitle">PAUSE<span>2022</span></figcaption>
+            <figcaption class="figInfo">Product Design, Mobile App</figcaption>
+            <!-- Modal -->
+       <div class="modal fade" id="UHOH" role="dialog">
+        <div class="modal-dialog modal-xl">
         
-        <a href="areyoustillwatching.html"><video width=100% src="indexsmile.mp4" type="null" muted="" autoplay="" loop=""></video></a>
-        <figcaption><div class="captionTitle"><a href="areyoustillwatching.html">Are you still watching?</a></div></figcaption>
-        <figcaption class="captionDetail">Speculative Film</figcaption>
-
-        <a href="listening.html"><video width=100% src="LISTEN.mp4" type="null" muted="" autoplay="" loop=""></video></a>
-        <figcaption><div class="captionTitle"><a href="listening.html">10100 Things You Said</a></div></figcaption>
-        <figcaption class="captionDetail">Sound Interaction, Speech Recognition</figcaption>
-
-        <a href="tnplh.html"><img width=100% src="tnplh.png" ></img></a>
-        <figcaption><div class="captionTitle"><a href="tnplh.html">There's No Place Like Home</a></div></figcaption>
-        <figcaption class="captionDetail">Collaborative Publication</figcaption>
-
-        <a href="draw.html"><video width=100% src="drawingCode.mp4" type="null" muted="" autoplay="" loop=""></video></a>
-        <figcaption><div class="captionTitle"><a href="draw.html">Draw with Code</a></div></figcaption>
-        <figcaption class="captionDetail">Educational Design, p5.js</figcaption>
-    
-    </div> 
-      </div>
-
-
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <!-- <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title" >Modal Header</h4> -->
+            </div>
       
+            <div class="modal-header">
+              <img src="error green.png" style="width:100%">
+              
+            </div>
+            <!-- <div class="modal-body"> -->
+              
+             <!-- empty body -->
+         <!-- </div> -->
+        
+             </div>
+          
+          </div>
+          
+        </div>
 
 
- 
- 
+
     
+    </div>
+    <!-- SECOND COLUMN OF PROJECTS -->
+    <div class="column">
+      <!-- BOOTSTRAP MODAL: PAUSE -->
+      <!-- Trigger the modal with a button -->
+ <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#PAUSE"> 
+  <img src="Frame 1.png" style="width:100%"></button><figcaption class="figTitle">PAUSE<span>2022</span></figcaption>
+      <figcaption class="figInfo">Front End Development, Code First Girls</figcaption>
+      <!-- Modal -->
+ <div class="modal fade" id="PAUSE" role="dialog">
+  <div class="modal-dialog modal-xl">
+  
+    <!-- Modal content-->
+    <div class="modal-content">
+      <!-- <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title" >Modal Header</h4>
+      </div> -->
+
+      <div class="modal-header">
+       
+        <img src="Frame 3.png" style="width:100%">
+      </div>
+      <div class="modal-body">
+       <!-- <button type="button" class="close" data-dismiss="modal">&times;</button>
+       <img src="Frame 3.png" style="width:100%"> -->
+   
+   <!-- PROJECT TITLE + SUMMARY -->
+        <div class="projectContent"> <h2>WEB DEVELOPMENT </h2>
+   <h3>PAUSE</h3>
+   <hr>
+    <p>
+      Pause is an <a href="https://drive.google.com/file/d/18KXC0BWZxl8Zjjkk6aD3a2XEECIXbYmh/view?usp=sharing " target="_blank" style="color: rgb(245, 187, 195);">award–winning</a>
+       online tool to make self-care more accessible.<br>
+      An 'advent calender' of mindful activities.
+<br><br> Released once a day, 
+      PAUSE curates activities including 10–minute yoga, easy recipes and joyful playlists.
+      
+      Meanwhile, the journal feature provides a safe space to document your thoughts online.
+      <br><br>Ironically, self–care can feel overwhelming. 
+      While there is an excess of trends, guides and resources on social media,
+      PAUSE seeks to alleviate this paradox of choice by recommending daily activities to users.
+      <br><Br>
+        
+pause for a moment as new content unlocks each day.
+<hr>
+    </p>
+       <!-- PROJECT CONTEXT -->
+       <div class="ProjectRow">
+           <div class="ProjectCol"><h2>CONTEXT</h2>
+               <p>Code First Girls<br>4 team members<br>4 weeks</p></div>
+               <div class="ProjectCol">
+           <h2>MY ROLES</h2>
+           <p>Team Leader<br>
+               Product Designer<br>
+               User Researcher
+               <br>Javascript</p></div>
+               <div class="ProjectCol">   <h2>TOOLS</h2>
+                   <p>Figma<br>HTML, CSS <br>javascript </p></div>
+       </div>
+       <hr>
+       <h2>BRIEF</h2>
+       <img src="pausebrief.png" >
+<hr>
+       <h2>DESIGN PROCESS</h2>
+       <p>Empathise: we conducted <span style="background-color: rgba(245, 187, 195,0.5); color: #1d1d1f;">secondary research and surveys</span>. 
+         Define: we <span style="background-color:  rgba(245, 187, 195,0.5); color: #1d1d1f;">collated our data</span> and defined the problem our website will solve.
+      
+         Ideation involved <span style="background-color:  rgba(245, 187, 195,0.5); color: #1d1d1f;">ideation exercises</span>. 
+         We created 
+         <span style="background-color:  rgba(245, 187, 195,0.5); color: #1d1d1f;">
+          wireframes and low–fidelity prototypes in Figma</span> 
+         before <span style="background-color:  rgba(245, 187, 195,0.5); color: #1d1d1f;">collaborating on Github</span> to develop the website.
+         </p><br>
+
+       <img src="pauseProcess-01.png" >
+       <hr style="color:#333;">
+       
+       <h2>EMPATHISE | SURVEY</h2>
+       <p>We conducted surveys on our Instagram accounts to target a 18 – 35 year old users.
+         <br>
+         While the survey was useful in reaching <span style="background-color:  rgba(245, 187, 195,0.5); color: #1d1d1f;">over 2000 people</span> through our combined following, 
+         <span style="background-color:  rgba(245, 187, 195,0.5); color: #1d1d1f;">surveys fail to account for in–depth behavioural observations</span> which an in–person interview would provide.
+         <br>Although we asked open–ended questions to encourage long–form answers, <span style="background-color:  rgba(245, 187, 195,0.5); color: #1d1d1f;">if we had more time</span>, we would've conducted interviews and focus group discussions.
+       </p>
+       <br>
+       <div class="ProjectRow">
+        <div class="FourCol"><img src="insta1.png" ></div>
+        <div class="FourCol"><img src="insta2.png" ></div>
+        <div class="FourCol"><img src="insta3.png" ></div>
+        <div class="FourCol"><img src="insta4.png" ></div>
+    </div><br>
+    <h2>EMPATHISE | FINDINGS</h2>
+    <div class="ProjectRow">
+
+      <div class="FourCol"><h3>Over 2 thirds</h3>
+        <p>don't know where to start with self–care</p></div>
+
+        <div class="FourCol"><h3>64% of users</h3>
+          <p>try to meditate regularly</p></div>
+
+      <div class="FourCol"><h3>95% of users</h3>
+      <p>consider listening to music as a form of self–care</p></div>
+      
+          <div class="FourCol"><h3>94% of users</h3>
+            <p>want to practice mindfulness</p></div>
+  </div>
+
+  <div class="ProjectRow">
+    <div class="FourCol"><h3>Over half of users</h3>
+      <p>want to start journaling</p></div>
+
+    <div class="FourCol"><h3>40% of users</h3>
+      <p>find it challenging to start writing in a journal</p></div>
+      <div class="FourCol"><h3>Over a third of users</h3>
+        <p>would like to learn yoga</p></div>
+    <div class="FourCol"><h3>Over 90% of users</h3>
+    <p>have a feel–good playlist</p></div>
+      
+</div>
+<br>
+ 
+<h2>EMPATHISE | USER PERSONA</h2>
+<img src="joshPersona.png" >
+
+
+<h2>EMPATHISE | USER STORIES</h2>
+<img src="PauseUserStory.png" >
+<hr>
+<h2>DEFINE | HOW MIGHT WE?</h2>
+<ul>
+  <li>how might we make make journaling <span style="background-color:  rgba(245, 187, 195,0.5); color: #1d1d1f;">less daunting?</li>
+    <li>how might we make self–care resources <span style="background-color:  rgba(245, 187, 195,0.5); color: #1d1d1f;">more accessible?</li>
+      <li>how might we <span style="background-color:  rgba(245, 187, 195,0.5); color: #1d1d1f;">inspire users</span> to practice mindfullness?</li>
+</ul>
+
+<hr>
+<h2>IDEATE | STRATEGY</h2>
+<p>With the themes of self–care and journaling we now had a 
+<span style="background-color:  rgba(245, 187, 195,0.5); color: #1d1d1f;">conceptual foundation</span> to develop a strategy.
+I followed Simon Sinek's Golden Circle to 
+<span style="background-color:  rgba(245, 187, 195,0.5); color: #1d1d1f;">generate ideas based on evidence and user needs</span>.
+<br><br>
+I found this process useful to reinforce our twofold goal of 
+<span style="background-color:  rgba(245, 187, 195,0.5); color: #1d1d1f;">facilitating journaling and practices of self–care</span> 
+in order to provide a space for users to learn, be present, offload thoughts.</p>
+<ul>
+  <li>We decide to proceed with the idea of an 
+    <span style="background-color:  rgba(245, 187, 195,0.5); color: #1d1d1f;">advent calender</span> 
+    which releases daily self–care activities.</li>
+</ul>
+<img src="goldencircle.jpg" >
+<br>
+<hr>
+<h2>PROTOTYPE | WIREFRAMING</h2>
+<p>While collaborating in Figma to discuss our wireframes,
+  <br>we quickly found ourselves coming up with ideas on how to start prototyping in code.   </p><br>
+
+
+
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" 
+src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FyW7lYqLN9XJXKSRk3fRP7X%2FUntitled%3Fnode-id%3D0%253A1" 
+allowfullscreen></iframe>
+<br><hr>
+<h2>IDEATE | MOOD BOARD</h2>
+<ul>
+<li>We were drawn to friendly, warm colours </li>
+<li>Flat, bold typography</li>
+<li>Blocks of colour to indicate which dates have passed</li>
+</ul><br>
+<img src="moodboardPause.png" >
+<br>
+<hr>
+
+<h2>PROTOTYPE | IN CODE</h2>
+<div class="ProjectRow">
+  <div class="TwoCol">
+
+<video width="100%" src="pausedemo2.mp4" type="null" muted="" autoplay="" loop="" style="    object-fit: cover;
+                            object-position: center;"></video></div>
+
+ <div class="TwoCol">
+<video width="100%" src="pausedemo.mp4" type="null" muted="" autoplay="" loop="" style="    object-fit: cover;
+object-position: center;"></video></div>
+</div>
+<hr>
+<h2>REFLECTIONS | NEXT STEPS</h2>
+<ul>
+<li>proud of what we achieved given the short timeframe and varying design and programming skills within the team</li>
+<li>I think we could have considered how users with 
+  <span style="background-color:  rgba(245, 187, 195,0.5); color: #1d1d1f;">colour deficient vision</span> 
+  experience the hover states. For example, the naviagtion bar text could be 
+  <span style="background-color:  rgba(245, 187, 195,0.5); color: #1d1d1f;">italicised to indicate hovering</span>, which would be more visually accessible to all users</li>
+<li>A future version of the website could include an 
+  <span style="background-color:  rgba(245, 187, 195,0.5); color: #1d1d1f;">opportunity for user feedback</span> on the daily recommendations in order to 
+  <span style="background-color:  rgba(245, 187, 195,0.5); color: #1d1d1f;">foster a sense of user autonomy</span></li>
+<li>I'm going to design an app version of PAUSE which will 
+  <span style="background-color:  rgba(245, 187, 195,0.5); color: #1d1d1f;">leverage designing for algorithmic recommendations</span> as both a business need and user need</li>
+
+</ul>
+
+
+
+   </div>
+   <!-- <div class="projectContent2">
+       <h2>User Research</h2>
+   </div> -->
+       </div>
+
+
+
+
+
+       
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">back</button>
+      </div>
+    </div>
     
   </div>
+</div>
+<!-- SECOND PROJECT IN SECOND COLUMN -->
+<!-- BOOTSTRAP MODAL: WWF -->
+      <!-- Trigger the modal with a button -->
+      <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#UHOH"> 
+        <img src="WWF.png" style="width:100%"></button><figcaption class="figTitle">WWF<span>2021</span></figcaption>
+            <figcaption class="figInfo">Website Redesign, client</figcaption>
+            <!-- Modal -->
+       <div class="modal fade" id="UHOH" role="dialog">
+        <div class="modal-dialog modal-xl">
+        
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <!-- <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title" >Modal Header</h4> -->
+            </div>
+      
+            <div class="modal-header">
+              <img src="error page.png" style="width:100%">
+              
+            </div>
+            <!-- <div class="modal-body"> -->
+              
+             <!-- empty body -->
+         <!-- </div> -->
+        
+             </div>
+          
+          </div>
+          
+        </div>
+      </div>
+
+  </div>
+  </div>
+
+
+     <!-- contact header -->
+     <div class="contact"  id="contact">
+       <hr class="lineBreak">
+       
+        <p>Contact</p>
+      <p>I'd love to build something <br>human–centered with you, <a href="mailto:draganic.dejana@gmail.com"><span class="sayHi">say hi.</span></a></p>
+      <br>
+      <p>Lets <a href="https://www.linkedin.com/in/dejana-draganić/" target="_blank"><span class="Connect">connect.</span></a></p><br><br>
+      </div>
+
+      <h2>© 2022 Dejana Draganić</h2>
+
+
+
+</div>
+
+  
+  <script>
+    // Get the elements with class="column"
+    var elements = document.getElementsByClassName("column");
+    
+    // Declare a loop variable
+    var i;
+    
+    // Full-width images
+    function one() {
+        for (i = 0; i < elements.length; i++) {
+        elements[i].style.msFlex = "100%";  // IE10
+        elements[i].style.flex = "100%";
+      }
+    }
+    
+    // Two images side by side
+    function two() {
+      for (i = 0; i < elements.length; i++) {
+        elements[i].style.msFlex = "50%";  // IE10
+        elements[i].style.flex = "50%";
+      }
+    }
+    
+    </script>
+<!-- partial -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script><script  src="./script.js"></script>
+
+
+
+
+
 </body>
 </html>
+
+
+
+
+

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dejana draganić</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <div class="navbar">
+        <a href="/" >2022</a>
+        <div class="navbarLeft">
+            <a href="#" onclick="smoothScroll(document.getElementById('projectIndex'))">Index, </a>
+            <p>&nbsp;</p>
+            <a href="contact.html">Contact,</a>
+            <nav class="nav">
+                <ul>
+                  <li>
+                    <button class="dark-button">Dark <i class="zmdi zmdi-brightness-2 zmdi-hc-fw"></i> </button>
+                  </li>
+                  <li>
+                    <button class="light-button" hidden="hidden">Light <i class="zmdi zmdi-sun zmdi-hc-fw"></i></button>
+                  </li>
+                </ul>
+              </nav>
+        </div>
+     
+      </div>
+
+
+     
+      <main>
+
+      <div class="intro">
+          <p><span class="homeHover">Connect</span> with me, or send me an <span class="homeHover">email</span>.</p>
+    
+     <hr style="height:0.4vw;border:none;color:#1d1d1f;background-color:#333;">
+        </div>
+      </main>
+
+      <div class="projectIndex"  id="projectIndex">
+        <p>Index</p></div>
+        <!-- PHOTO GRID -->
+<div class="row"> 
+    <div class="column">
+        <video width="100%" src="https://www.dejanadesign.me/ScreenshotIndex.mp4" type="null" muted="" autoplay="" loop="" style="    object-fit: cover;
+        object-position: center;"></video>
+      <video width="100%" src="https://www.dejanadesign.me/indexShakeBlue.mp4" type="null" muted="" autoplay="" loop="" style="    object-fit: cover;
+    object-position: center;"></video>
+      <video width="100%" src="https://www.dejanadesign.me/https://www.dejanadesign.me/pause.mp4" type="null" muted="" autoplay="" loop="" style="    object-fit: cover;
+    object-position: center;"></video>
+    </div>
+    <div class="column">
+        <video width="100%" src="https://www.dejanadesign.me/filter1.mp4" type="null" muted="" autoplay="" loop="" style="    object-fit: cover;
+        object-position: center;"></video>
+        <video width="100%" src="https://www.dejanadesign.me/https://www.dejanadesign.me/pause.mp4" type="null" muted="" autoplay="" loop="" style="    object-fit: cover;
+        object-position: center;"></video>
+        <video width="100%" src="https://www.dejanadesign.me/https://www.dejanadesign.me/pause.mp4" type="null" muted="" autoplay="" loop="" style="    object-fit: cover;
+        object-position: center;"></video>
+     
+   
+  </div>
+  </div>
+  <script>
+    // Get the elements with class="column"
+    var elements = document.getElementsByClassName("column");
+    
+    // Declare a loop variable
+    var i;
+    
+    // Full-width images
+    function one() {
+        for (i = 0; i < elements.length; i++) {
+        elements[i].style.msFlex = "100%";  // IE10
+        elements[i].style.flex = "100%";
+      }
+    }
+    
+    // Two images side by side
+    function two() {
+      for (i = 0; i < elements.length; i++) {
+        elements[i].style.msFlex = "50%";  // IE10
+        elements[i].style.flex = "50%";
+      }
+    }
+    
+    // Four images side by side
+    function four() {
+      for (i = 0; i < elements.length; i++) {
+        elements[i].style.msFlex = "25%";  // IE10
+        elements[i].style.flex = "25%";
+      }
+    }
+    
+    // Add active class to the current button (highlight it)
+    var header = document.getElementById("myHeader");
+    var btns = header.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function() {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
+    </script>
+<!-- partial -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script><script  src="./script.js"></script>
+
+
+
+
+
+</body>
+</html>
